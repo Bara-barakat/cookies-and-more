@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #f4f4f9;
+}
+
+.timer {
+  position: fixed;
+  z-index: 9999;
+  display: block;
+  transition: opacity 1s ease-out;
+  background-color: #c718c7;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.timer img {
+  width: 250px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: block;
+  transition: opacity 1s ease-out;
+}
+
+.timer.hide {
+  opacity: 0;
+  display: none;
+}
+
+nav {
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  height: 400px;
+  background-image: url("images/bg.png");
+  background-size: contain;
+}
+
+nav .con {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav .con img {
+  width: 200px;
+}
+
+nav .con ul {
+  display: flex;
+  background-color: bisque;
+  border-radius: 10px;
+}
+
+nav .con ul li {
+  padding: 10px;
+  list-style: none;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  background-color: chocolate;
+}
+
+nav .con button {
+  background-color: #c718c7;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: larger;
+}
+
+nav .hed {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .hed .r {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav .hed .r h1 {
+  font-size: 1.4cm;
+  color: antiquewhite;
+}
+
+nav .hed .r h2 {
+  font-size: 1cm;
+  color: antiquewhite;
+  /* background-color: #a0146ad7; */
+  width: 230px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+nav .hed .l img {
+  width: 320px;
+}
+
+.item {
+  margin: 10px;
+}
+
+.item .container {
+  margin: 10px;
+}
+
+.item .container .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item .container .row .fourcol {
+  /* border: 1px solid black;
+  border-radius: 8px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 260px; */
+
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+}
+
+.item .container .row .fourcol:hover {
+  scale: 1.1;
+}
+
+.item .container .row .fourcol img {
+  border-radius: 50%;
+  margin: 40px;
+  width: 1fr;
+}
+
+.item .container .row .fourcol img:hover {
+  scale: 1.2;
+}
+
+.item .container .row .fourcol h5 {
+  color: #333;
+  font-size: larger;
+}
+
+.item .container .row .fourcol p {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.item .container .row .fourcol a h5 {
+  text-align: center;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 27px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item .container .row .fourcol a h5:hover {
+  background-color: #c2185b;
+}
+
+.item .container .row .fourcol img {
+  width: 1fr;
+}
+
+a {
+  text-decoration: none;
+}
+
+marquee img {
+  margin-top: 20px;
+  width: 300px;
+  height: 460px;
+  padding: 10px;
+  border: #c2185b 1px solid;
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.w {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+  top: 520px;
+  animation: move 2s infinite alternate;
+}
+
+.w img {
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.w:hover img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(0, 255, 0, 0.8);
+}
+
+@keyframes move {
+  0% {
+    left: 10px;
+  }
+  100% {
+    left: 60px;
+  }
+}
+
+footer {
+  background-image: url("images/footer.png");
+  height: 100px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h3 {
+  margin-top: 20px;
+  font-size: 21px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media (max-width: 800px) {
+  nav li {
+    font-size: 14px !important;
+  }
+  .hed {
+    margin: 20px;
+  }
+  .hed .r h1 {
+    font-size: 30px !important;
+    margin: 10px;
+  }
+  .hed .l img {
+    width: 170px !important;
+  }
+  .item {
+    margin: 200px 20px;
+  }
+  .item p {
+    font-size: small;
+  }
+}

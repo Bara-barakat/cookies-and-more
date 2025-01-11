@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/cupcake-img.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cookies and more</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ga+Maamli&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="timer">
+      <img
+        src="images/Pink_Brown_Circle_Cake_Logo-removebg-preview.png"
+        alt="img"
+      />
+    </div>
+
+    <nav>
+      <div class="con">
+        <img src="images/ico-Photoroom.png" alt="img" />
+        <div class="L">
+          <ul>
+            <li>Home</li>
+            <li><a href="#pr">Products</a></li>
+            <li><a href="#con">Contacts</a></li>
+            <li><button onclick="changeBackgroundColor()"></button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hed">
+        <div class="r">
+          <h1>Cookies and more</h1>
+          <!-- <h2>Sweets Offers</h2> -->
+        </div>
+        <div class="l">
+          <img src="images/cake.png" alt="img" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="item">
+      <h2>Our Products</h2>
+      <p>-----------------------</p>
+
+      <div id="pr" class="container">
+        <div class="row">
+          <script>
+            const imagesData = {
+              images: [
+                {
+                  section_class: "group1",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/2.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group2",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/3.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group3",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/4.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group1",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/7.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group2",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/9.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group3",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/10.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group1",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/11.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group2",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/12.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group3",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/1.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group1",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/6.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group2",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/8.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group3",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/5.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group1",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/18i.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group2",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/19i.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group3",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/20i.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group1",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/21i.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group2",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/22i.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group3",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/17i.jpg",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group1",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/ii.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group2",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/i11.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group3",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/13i.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+                {
+                  section_class: "group1",
+                  heading: "Latest news",
+                  text: "off 30%",
+                  image_src: "images/16i.png",
+                  image_width: "215",
+                  image_height: "137",
+                  button_text: "Order now",
+                },
+              ],
+            };
+
+            imagesData.images.forEach((image) => {
+              document.write(`
+                  <div class="container">
+                    <div  class="fourcol">
+                      <section class="${image.section_class}">
+                        <h5>${image.heading}</h5>
+                        <p>${image.text}</p>
+                        <a class="photo_hover3" href="#"><img src="${image.image_src}" width="${image.image_width}" height="${image.image_height}" alt="" /></a>
+                        <a target="_blank" href="https://wa.me/962799543804"><h5 class="button">${image.button_text}</h5></a>
+                      </section>
+                    </div>
+                  </div>
+                  `);
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <h3>Our customers' reviews</h3>
+    <marquee id="con">
+      <img src="images/s1.jpg" alt="img" />
+      <img src="images/s2.jpg" alt="img" />
+      <img src="images/s4.jpg" alt="img" />
+      <img src="images/s3.jpg" alt="img" />
+    </marquee>
+
+    <div class="w" onclick="window.location.href='https://wa.me/962799543804';">
+      <img src="images/Whatsapp.ico" alt="img" />
+    </div>
+
+    <footer>
+      <h3>
+        All Rights Reserved By
+        <a href="https://bara-barakat.net/">Bara Barakat</a>
+      </h3>
+    </footer>
+
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          document.querySelector(".timer").classList.add("hide");
+        }, 2000);
+      };
+
+      function changeBackgroundColor() {
+        document.body.style.backgroundColor = "#FF69B4";
+      }
+    </script>
+  </body>
+</html>
